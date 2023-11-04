@@ -20,13 +20,13 @@ if database:
 else:
     print("--------------------------------")
     print("DB에서 책을 찾지 못했습니다. github Issues로 등록하면 다음 업데이트에 반영됩니다.\n10초뒤, 코드를 자동 종료합니다.")
+    dbread.close()
     time.sleep(10)
-    data.close()
     exit()
 
 dataurl = (data)
 print("--------------------------------")
 print(dataurl + "을(를) 인터넷 주소창에 입력하시면 자동 다운로드가 진행됩니다.\n1분뒤, 코드를 자동 종료합니다.")
+dbread.close()
 time.sleep(60)
-data.close()
 exit()
