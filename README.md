@@ -7,10 +7,10 @@
 답지를 **pdf파일**로 편하게 받아보세요!
 
 ## 자주 묻는 질문
-[]()
+[자주 묻는 질문](https://github.com/rabbitilove110/answer-downloader/blob/main/.github/READ/%EC%9E%90%EC%A3%BC%EB%AC%BB%EB%8A%94%EC%A7%88%EB%AC%B8.MD)
 
 ## 책 추가 현황
-[]()
+[책 추가 현황](https://github.com/rabbitilove110/answer-downloader/blob/main/.github/READ/%EC%B1%85%ED%98%84%ED%99%A9.MD)
 
 ## 주의사항
 1. 파이썬 3.11.6 환경에서 제작되었습니다.
