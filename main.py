@@ -5,7 +5,7 @@ import time
 data_dict = {}
 with open("./database.txt", "r", encoding='UTF-8') as file:
     for line in file:
-        key, value = line.strip().split(',') # key,value 문제 있음
+        key, value, data = line.strip().split(',')
         data_dict[key] = value
 
 print("Answer sheet downloader, ver.1.0dev\n\n문제집 이름과 출판사를 적어주세요.\n예시 : OO수학 - OO문고\n\n주의사항 : github 사이트를 참고해주세요.\n")
@@ -14,7 +14,7 @@ book = input("출판사를 입력해주세요 : ")
 
 print("--------------------------------")
 print("잠시만 기다려주세요. DB에서 데이터를 분석하고있습니다.")
-time.sleep(3)
+time.sleep(1)
 
 if (name in data_dict and book in data_dict) or (name + '-1' in data_dict and book + '-1' in data_dict):
     data_key = name if name in data_dict else name + '-1'
