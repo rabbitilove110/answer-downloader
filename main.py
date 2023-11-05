@@ -10,7 +10,7 @@ with open("./database.txt", "r", encoding='UTF-8') as file:
 for key, value in data_dict.items():
     data_dict[key] = value.strip()
 
-print("Answer sheet downloader, ver.1.0dev\n\n문제집 이름과 출판사를 적어주세요.\n예시 : OO수학 - OO문고\n\n주의사항 : github 사이트를 참고해주세요.\n")
+print("Answer sheet downloader, ver.1.0 OBT\n\n문제집 이름과 출판사를 적어주세요.\n예시 : OO수학 - OO문고\n\n주의사항 : github 사이트를 참고해주세요.\n")
 name = input("책이름을 입력해주세요 : ")
 book = input("출판사를 입력해주세요 : ")
 
