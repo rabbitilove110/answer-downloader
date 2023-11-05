@@ -6,7 +6,7 @@ data_dict = {}
 with open("./database.txt", "r", encoding='UTF-8') as file:
     for line in file:
         key, value, data = line.strip().split(',')
-        data_dict[key] = value
+        data_dict[(key, value.strip())] = data
 for key, value in data_dict.items():
     data_dict[key] = value.strip()
 
@@ -18,14 +18,10 @@ print("--------------------------------")
 print("잠시만 기다려주세요. DB에서 데이터를 분석하고있습니다.")
 time.sleep(1)
 
-if (name in data_dict.keys() and book in data_dict.values()) or (name + '-1' in data_dict.keys() and book + '-1' in data_dict.values()):
-    data_key = name if name in data_dict else name + '-1'
-    data_key2 = book if book in data_dict else book + '-1'
-    data3 = data_dict[data_key]
-    
-    dataurl = (f"{data_key}:", data3)
+if ((name, book) in data_dict) or ((name + '-1', book + '-1') in data_dict):
+    data3 = data_dict[(name, book) if (name, book) in data_dict else (name + '-1', book + '-1')]
     print("--------------------------------")
-    print(dataurl + "을(를) 인터넷 주소창에 입력하시면 자동 다운로드가 진행됩니다.\n1분뒤, 코드를 자동 종료합니다.")
+    print(data3 + "을(를) 인터넷 주소창에 입력하시면 자동 다운로드가 진행됩니다.\n1분뒤, 코드를 자동 종료합니다.")
     file.close()
     time.sleep(60)
     exit()
