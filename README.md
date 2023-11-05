@@ -12,6 +12,16 @@
 ## 책 추가 현황
 [책 추가 현황](https://github.com/rabbitilove110/answer-downloader/blob/main/.github/READ/%EC%B1%85%ED%98%84%ED%99%A9.MD)
 
+## 테스트 방법
+오픈베타가 시작됨에 따라, 테스트 방법을 기재합니다.<br>오픈베타인 만큼 오류가 많습니다. 오류는 Issues에 등록해주시면 감사드리겠습니다.
+
+조건 : 파이썬 3.11.6이 설치되어 있어야합니다.<br>git bash에 git clone git@github.com:rabbitilove110/answer-downloader.git을 입력합니다.<br>main.py를 실행합니다.
+
+- 책이름은 데이터1과 데이터2입니다.
+- 출판사는 데이터1-1과 데이터2-1입니다.
+- 이 외의 이름을 입력하면 인식이 안됩니다.
+- 데이터1과 데이터1-1이 세트입니다. 데이터2와 데이터2-1이 세트입니다.
+
 ## 주의사항
 1. 파이썬 3.11.6 환경에서 제작되었습니다.
 2. MIT 라이선스에 맞게 사용해주세요.
