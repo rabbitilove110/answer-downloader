@@ -21,7 +21,7 @@ time.sleep(1)
 if (('데이터1', '데이터2') in data_dict) or (('데이터A', '데이터B') in data_dict) or (('데이터1-1', '데이터2-1') in data_dict):
     data3 = data_dict[(name, book) if ('데이터1', '데이터2') in data_dict else ('데이터A', '데이터B', '데이터1-1', '데이터2-1')]
     print("--------------------------------")
-    print(data3 + "을(를) 인터넷 주소창에 입력하시면 자동 다운로드가 진행됩니다.\n1분뒤, 코드를 자동 종료합니다.")
+    print(data3 + "을(를) 인터넷 주소창에 입력하시면 다운로드가 진행됩니다.\n1분뒤, 코드를 자동 종료합니다.")
     file.close()
     time.sleep(60)
     exit()
