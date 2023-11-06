@@ -12,6 +12,9 @@
 ## 책 추가 현황
 [책 추가 현황](https://github.com/rabbitilove110/answer-downloader/blob/main/.github/READ/%EC%B1%85%ED%98%84%ED%99%A9.MD)
 
+## 알려진 문제
+[알려진 문제](https://github.com/rabbitilove110/answer-downloader/blob/main/.github/READ/%EC%95%8C%EB%A0%A4%EC%A7%84%EB%AC%B8%EC%A0%9C.MD)
+
 ## 테스트 방법
 오픈베타가 시작됨에 따라, 테스트 방법을 기재합니다.<br>오픈베타인 만큼 오류가 많습니다. 오류는 Issues에 등록해주시면 감사드리겠습니다.
 
