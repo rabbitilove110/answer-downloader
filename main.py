@@ -10,7 +10,13 @@ with open("./database.txt", "r", encoding='UTF-8') as file:
 for key, value in data_dict.items():
     data_dict[key] = value.strip()
 
-print("Answer sheet downloader, ver.1.0 OBT\n\n문제집 이름과 출판사를 적어주세요.\n예시 : OO수학 - OO문고\n\n주의사항 : github 사이트를 참고해주세요.\n")
+print(''' ___                                 _                _       _                   _              _           
+| . |._ _  ___ _ _ _  ___  _ _   ___| |_  ___  ___  _| |_   _| | ___  _ _ _ ._ _ | | ___  ___  _| | ___  _ _ 
+|   || ' |<_-<| | | |/ ._>| '_> <_-<| . |/ ._>/ ._>  | |   / . |/ . \| | | || ' || |/ . \<_> |/ . |/ ._>| '_>
+|_|_||_|_|/__/|__/_/ \___.|_|   /__/|_|_|\___.\___.  |_|   \___|\___/|__/_/ |_|_||_|\___/<___|\___|\___.|_|  
+                                                                                                             
+''')
+print("ver.2.0 OBT\n\n문제집 이름과 출판사를 적어주세요.\n예시 : OO수학 - OO문고\n\n주의사항 : github 사이트를 참고해주세요.\n")
 name = input("책이름을 입력해주세요 : ")
 book = input("출판사를 입력해주세요 : ")
 
@@ -21,7 +27,7 @@ time.sleep(1)
 if (('데이터1', '데이터2') in data_dict) or (('데이터A', '데이터B') in data_dict) or (('데이터1-1', '데이터2-1') in data_dict):
     data3 = data_dict[(name, book) if ('데이터1', '데이터2') in data_dict else ('데이터A', '데이터B', '데이터1-1', '데이터2-1')]
     print("--------------------------------")
-    print(data3 + "을(를) 인터넷 주소창에 입력하시면 다운로드가 진행됩니다.\n1분뒤, 코드를 자동 종료합니다.")
+    print(data3 + " 을(를) 인터넷 주소창에 입력하시면 다운로드가 진행됩니다.\n1분뒤, 코드를 자동 종료합니다.")
     file.close()
     time.sleep(60)
     exit()
