@@ -1,0 +1,6 @@
+{
+    "rules": [
+        {"input1": "데이터1", "input2": "데이터2", "output": "데이터3"},
+        {"input1": "데이터A", "input2": "데이터B", "output": "데이터C"}
+    ]
+}
